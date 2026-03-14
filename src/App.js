@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Piano from "./components/piano.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gray-900 flex flex-col items-center justify-center text-white">
+
+      <h1 className="text-4xl mb-10">
+        React Piano 🎹
+      </h1>
+
+      <Piano/>
+
     </div>
   );
 }
